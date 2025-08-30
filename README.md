@@ -11,6 +11,7 @@ and analyze credit card operations
 effectively.
 
 Project Insights- Week 53 (31st Dec)
+
  WoW change: 
  
 • Revenue increased by 28.8%, 
@@ -40,6 +41,7 @@ transactions
 
  
 DAX Queries
+
  AgeGroup = SWITCH(
  TRUE(),
  'public cust_detail'[customer_age] < 30, "20-30",
@@ -58,7 +60,6 @@ DAX Queries
  "unknown"
  )
  
- DAX Queries
  week_num2 = WEEKNUM('public cc_detail'[week_start_date])
  Revenue = 'public cc_detail'[annual_fees] + 'public cc_detail'[total_trans_amt] + 'public cc_detail'[interest_earned]
  
